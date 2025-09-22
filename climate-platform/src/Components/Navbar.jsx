@@ -16,7 +16,7 @@ function Navbar() {
         <li><Link to="/about">About</Link></li>
         <li><Link to="/citizens">Citizens</Link></li>
         <li><Link to="/farmers">Farmers</Link></li>
-        <li><Link to="/clubs">Clubs(Students)</Link></li>
+        <li><Link to="./login">Clubs(Students)</Link></li>
         <li><Link to="/researchers">Researchers(Data Bank)</Link></li>
         <li><Link to="/donations">Donations</Link></li>
       </ul>

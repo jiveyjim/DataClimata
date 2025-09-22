@@ -1,0 +1,104 @@
+/* Container */
+.login-container {
+  max-width: 420px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #27ae60;
+  outline: none;
+  box-shadow: 0 0 6px rgba(39, 174, 96, 0.4);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #27ae60;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: #219150;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup-text a {
+  color: #27ae60;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signup-text a:hover {
+  color: #219150;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+}
