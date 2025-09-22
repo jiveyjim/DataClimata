@@ -1,12 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Pages/About/About";
 import Navbar from "./Components/Navbar";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Clubs from "./Pages/Clubs";
 import Farmers from "./Pages/Farmers";
 import Citizens from "./Pages/Citizens";
 import Researchers from "./Pages/Researchers";
-import Donations from "./Pages/Donations";
+import Donations from "./Pages/Donations/Donations";
+import Login from "./Pages/Authentication/Login";   
+import Signup from "./Pages/Authentication/Signup"; 
+import Forgot from "./Pages/Authentication/Forgot";
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot" element={<Forgot />} />
         <Route path="/about" element={<About />} />
+        <Route path="/clubs" element={<Clubs />} />
         <Route path="/farmers" element={<Farmers />} />
         <Route path="/citizens" element={<Citizens />} />
         <Route path="/researchers" element={<Researchers />} />
