@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: #04793fb2; /* Green theme */
+  color: rgb(221, 233, 223);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.brand-name {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 2px solid white;       /* Button border */
+  border-radius: 6px;            /* Rounded corners */
+  transition: all 0.3s ease;     /* Smooth effect */
+}
+
+.navbar-links a:hover {
+  background-color: white;       /* Background on hover */
+  color: #04793f;                /* Text turns green */
+  border-color: #04793f;         /* Border matches background */
+  cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    width: 100%;                 /* Full width buttons on mobile */
+    text-align: center;
+  }
+}
