@@ -1,0 +1,377 @@
+/* === General Reset === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fdf9; /* light eco background */
+  color: #333;
+}
+
+/* === Hero Slideshow === */
+.hero-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("/students.jpg") no-repeat center center/cover; /* Replace with your image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Soft gradient overlay for readability */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),   /* Top darker */
+    rgba(0, 0, 0, 0.1)    /* Bottom lighter */
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2; /* ensures text is above gradient */
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn.primary {
+  background: #2e7d32; /* eco green */
+  color: white;
+}
+
+.hero-btn.primary:hover {
+  background: #1b5e20;
+}
+
+.hero-btn.secondary {
+  background: white;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+.hero-btn.secondary:hover {
+  background: #c8e6c9;
+}
+
+
+
+/* === About Section === */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8f1);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #2e7d32; /* deep eco green */
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* === Impact Section === */
+.impact {
+  padding: 70px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1b5e20; /* strong eco green */
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.stat {
+  background: #e8f5e9;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-8px);
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+/* === Audiences Section === */
+.audiences {
+  padding: 70px 20px;
+  background: #f5faf5; /* soft eco background */
+  text-align: center;
+}
+
+.audiences h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.audience-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.audience-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.audience-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.audience-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.audience-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #388e3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.audience-card .btn:hover {
+  background: #2e7d32;
+}
+/* === Climate Data Section === */
+.climate-data {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8f1);
+  text-align: center;
+}
+
+.climate-data h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.climate-data p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Input + Button */
+.climate-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.climate-form input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #c8e6c9;
+  width: 250px;
+}
+
+.climate-form button {
+  padding: 12px 20px;
+  background: #388e3c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.climate-form button:hover {
+  background: #2e7d32;
+}
+
+/* Results Grid */
+.climate-results {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.climate-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.climate-card:hover {
+  transform: translateY(-6px);
+}
+
+.climate-card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.climate-card h3 {
+  font-size: 1.2rem;
+  color: #1b5e20;
+  margin-bottom: 8px;
+}
+
+.climate-card p {
+  font-size: 1.1rem;
+  color: #444;
+}
+/* Call-to-Action Section */
+.cta-section {
+  position: relative;
+  background: url("/cta-bg.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 60px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cta-overlay {
+  background: rgba(0, 60, 40, 0.7); /* Eco green overlay */
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e0f7e9; /* Light eco green */
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #f1fff8;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.08);
+}
+
+.cta-btn.volunteer {
+  background: #4caf50; /* Green */
+  color: white;
+}
+
+.cta-btn.donate {
+  background: #ffcc00; /* Golden eco accent */
+  color: #003020;
+}
+
+.cta-btn.share {
+  background: #2196f3; /* Blue */
+  color: white;
+}

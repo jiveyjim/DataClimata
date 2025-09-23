@@ -1,0 +1,116 @@
+.donations {
+  font-family: "Poppins", sans-serif;
+  color: #2e3d2f;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* === Hero === */
+.donations-hero {
+  background: url("/trees.jpg") center/cover no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.donations-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.donations-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.donate-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.donate-btn:hover {
+  background: #256628;
+}
+
+/* === Impact Counters === */
+.donations-impact {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+.impact-card {
+  background: #e8f5e9;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 1;
+}
+.impact-card h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+/* === Tiers === */
+.donations-tiers {
+  margin: 4rem 0;
+}
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.tier-card {
+  background: white;
+  border: 2px solid #a5d6a7;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.tier-card .icon {
+  font-size: 2rem;
+}
+.tier-card h3 {
+  color: #2e7d32;
+  margin: 1rem 0;
+}
+.donate-btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* === Custom Amount === */
+.donations-custom {
+  margin: 3rem 0;
+}
+.custom-donate {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.custom-donate input,
+.custom-donate select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* === CTA === */
+.donations-cta {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+.donations-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.donate-btn.big {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}

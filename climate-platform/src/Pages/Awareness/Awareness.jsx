@@ -53,7 +53,7 @@ function Awareness() {
       {/* Featured Article */}
       <section className="featured-article">
         <img
-          src="/featured.jpg" // ✅ Replace with your featured image
+          src="/featured.jpg" 
           alt="Featured Climate Article"
         />
         <div className="featured-content">

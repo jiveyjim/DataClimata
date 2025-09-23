@@ -30,7 +30,7 @@ Frontend: React (Vite) + CSS + Recharts Backend: Node.js + Express Database: MyS
 
 ⚡ Getting Started
 
-Clone the repo git clone https://github.com/your-username/greenpulse.git cd greenpulse
+Clone the repo git clone https://github.com/jiveyjim/DataClimata.git
 
 Install dependencies npm install
 

@@ -1,17 +1,26 @@
+import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="about-container">
-  
+    <main className="about-container">
+      {/* Hero Section */}
       <section className="about-hero">
         <h1>About DataClimata</h1>
         <p className="tagline">Insight for a Greener Future 🌍</p>
       </section>
 
+      {/* Image Section */}
       <div className="about-image-container">
-        <img src="/about_image.jpg" alt="Students in climate action" className="about-image" />
-        <p className="image-caption">Students leading the future of climate action 🌱</p>
+        <img
+          src="/about_image.jpg" // Make sure this file is in /public
+          alt="Students leading climate action"
+          className="about-image"
+        />
+        <p className="image-caption">
+          Students leading the future of climate action 🌱
+        </p>
       </div>
 
       {/* Our Story */}
@@ -33,7 +42,7 @@ function About() {
         <p>
           <strong>Mission:</strong> To empower students and communities to
           collect, validate, and share climate data that drives impactful
-          climate solutions.  
+          climate solutions.
           <br />
           <strong>Vision:</strong> A world where every community has access to
           accurate climate information, enabling sustainable action for future
@@ -74,13 +83,15 @@ function About() {
         <h2>Our Impact Goals</h2>
         <p>
           By combining student-driven data collection with advanced analysis, we
-          aim to:  
+          aim to:
         </p>
         <ul>
           <li>Increase the accuracy of localized climate predictions.</li>
           <li>Empower the next generation with climate knowledge and skills.</li>
-          <li>Drive relevant community projects (tree planting, waste cleanup,
-          soil management).</li>
+          <li>
+            Drive relevant community projects (tree planting, waste cleanup,
+            soil management).
+          </li>
           <li>Provide open, free datasets to fuel research and innovation.</li>
           <li>Mobilize donor support to scale real impact on the ground.</li>
         </ul>
@@ -91,10 +102,11 @@ function About() {
         <h2>Why DataClimata?</h2>
         <p>
           Unlike existing platforms that provide only general climate insights,
-          DataClimata focuses on <strong>hyper-local, student-driven data</strong>.
-          Our model ensures that climate action is relevant, community-based, and
-          sustainable — no more “one-size-fits-all” projects, but targeted
-          solutions where they matter most.
+          DataClimata focuses on{" "}
+          <strong>hyper-local, student-driven data</strong>. Our model ensures
+          that climate action is relevant, community-based, and sustainable —
+          no more “one-size-fits-all” projects, but targeted solutions where
+          they matter most.
         </p>
       </section>
 
@@ -103,11 +115,13 @@ function About() {
         <h2>Be Part of the Change</h2>
         <p>
           Whether you’re a student, farmer, citizen, researcher, or supporter —
-          you have a role in shaping our planet’s future.  
+          you have a role in shaping our planet’s future.
         </p>
-        <button className="join-btn">Join DataClimata</button>
+        <Link to="/login">
+          <button className="join-btn">Join DataClimata</button>
+        </Link>
       </section>
-    </div>
+    </main>
   );
 }
 
