@@ -3,7 +3,7 @@ import "./About.css";
 function About() {
   return (
     <div className="about-container">
-      /* Hero Section */
+  
       <section className="about-hero">
         <h1>About DataClimata</h1>
         <p className="tagline">Insight for a Greener Future 🌍</p>

@@ -1,0 +1,33 @@
+/* src/Components/Footer.css */
+.footer {
+  background: #04793fb2; /* Green theme */
+  color: white;
+  padding: 20px 40px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-brand p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.8;
+}

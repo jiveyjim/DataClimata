@@ -54,7 +54,7 @@ function Researchers() {
   };
 
   return (
-    <div style={{ padding: "0 40px" }}>
+    <div >
       <h1>📊 Researchers Dashboard</h1>
 
       {/* Region selector */}

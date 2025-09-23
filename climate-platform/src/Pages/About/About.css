@@ -1,7 +1,7 @@
 .about-container {
   max-width: 100%;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 ;
   color: #333;
   line-height: 1.6;
 }
@@ -21,13 +21,12 @@
 .tagline {
   font-size: 1.2rem;
   font-weight: bolds;
-  color: white;
   margin-top: 10px;
 }
 
 .about-section {
   margin-bottom: 30px;
-  color: white;
+  
 }
 
 .about-section h2 {
@@ -44,7 +43,7 @@
 .about-cta {
   text-align: center;
   margin-top: 50px;
-  color: white;
+  
 }
 
 .join-btn {
