@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222; /* make all text darker */
+}
+
+.app {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 42px; /* larger title */
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.intro {
+  font-size: 18px;
+  color: #444;
+}
+
+.region-select {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.stats-section {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: white;
+  flex: 1;
+  min-width: 140px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.notifications-achievements {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.notifications, .achievements {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.notifications h2, .achievements h2, .chart-section h2, .tips-section h2, .activity-section h2 {
+  color: #2c3e50;
+}
+
+.notification-item {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.notification-item .time {
+  color: gray;
+  font-size: 12px;
+}
+
+.achievement-item {
+  padding: 8px 0;
+}
+
+.chart-section {
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.tips-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.tips-section ul {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.activity-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.activity-section ul {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.small-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  background: #1abc9c;
+  color: white;
+  border-radius: 4px;
+}
+
+.clear-btn {
+  background: #e74c3c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+.chart-container text {
+  fill: #222 !important; /* ensure chart labels are visible */
+}
